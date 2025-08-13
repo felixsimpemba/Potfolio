@@ -1,0 +1,37 @@
+/* Custom styles for the portfolio website */
+
+/* Remove default margin and padding from the app container */
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Add background pattern for grid */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(79, 70, 229, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3730a3;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
