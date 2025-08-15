@@ -34,7 +34,7 @@ Microsoft Office Suite
 presentations
 EXPERIENCE
 Full Stack Software Developer – Chilan Technology  
-January 2024 – till current
+January 2024 – Present
 ▪ Develop cross-platform mobile applications using Flutter for various use cases.
 ▪ Design and implement efficient database structures and intuitive user interfaces to
 enhance user experience.
@@ -70,8 +70,7 @@ CERTIFICATION
 ▪ NDG Linux Essentials
 ▪ NDG Linux Unhatched
 ▪ CCNAv7 Introduction to Networks
-Page 2
 LEADERSHIP
-JETS Project Coordinator -  
-Youth Chairperson – God’s Favor Fellowships
-Property manager – University Christian Community 
+JETS Project Coordinator  
+Youth Chairperson – God's Favor Fellowships
+Property manager – University Christian Community

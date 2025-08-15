@@ -134,14 +134,14 @@ const Contact = () => {
               <ContactItem 
                 icon="email" 
                 title="Email" 
-                detail="felix.simpemba@example.com" 
-                link="mailto:felix.simpemba@example.com" 
+                detail="felixsimpemba@gmail.com" 
+                link="mailto:felixsimpemba@gmail.com" 
               />
               <ContactItem 
                 icon="phone" 
                 title="Phone" 
-                detail="+260 97X XXX XXX" 
-                link="tel:+26097XXXXXXX" 
+                detail="0973419876" 
+                link="tel:0973419876" 
               />
               <ContactItem 
                 icon="location" 

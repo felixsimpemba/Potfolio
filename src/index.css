@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #3b82f6; /* Blue-500 */
+  --color-primary-rgb: 59, 130, 246;
+  --color-secondary: #e2e8f0; /* Slate-200 */
+  --color-secondary-rgb: 226, 232, 240;
+  --color-dark: #1f2937; /* Gray-800 */
+}
+
 html {
   scroll-behavior: smooth;
 }
