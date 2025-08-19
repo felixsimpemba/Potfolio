@@ -51,7 +51,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="section-container">
         <motion.h2 
           className="section-title"
@@ -63,7 +63,7 @@ const Skills = () => {
           My Skills
         </motion.h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div 
               key={category.id}
@@ -71,11 +71,11 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
-              className="bg-secondary/30 p-6 rounded-lg"
+              className="bg-secondary/30 p-4 sm:p-6 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold text-dark mb-6">{category.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-dark mb-4 sm:mb-6">{category.title}</h3>
               
-              <div className="space-y-5">
+              <div className="space-y-3 sm:space-y-5">
                 {category.skills.map((skill, skillIndex) => (
                   <SkillBar 
                     key={`${category.id}-${skillIndex}`} 
@@ -90,15 +90,15 @@ const Skills = () => {
         
         {/* Additional skills icons */}
         <motion.div 
-          className="mt-16"
+          className="mt-12 sm:mt-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-xl font-bold text-center mb-8">Technologies I Work With</h3>
+          <h3 className="text-lg sm:text-xl font-bold text-center mb-6 sm:mb-8">Technologies I Work With</h3>
           
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8">
             {/* These would typically be actual SVG icons or images */}
             {['React', 'Flutter', 'Python', 'Java', 'Node.js', 'MySQL', 'Firebase', 'Git', 'Figma', 'AWS'].map((tech, index) => (
               <motion.div
@@ -107,10 +107,11 @@ const Skills = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="w-20 h-20 flex items-center justify-center bg-white rounded-full shadow-md"
-                whileHover={{ y: -5, scale: 1.05 }}
+                className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center bg-white rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                whileHover={{ y: -3, scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <span className="text-primary font-medium">{tech}</span>
+                <span className="text-primary font-medium text-xs sm:text-sm text-center px-1">{tech}</span>
               </motion.div>
             ))}
           </div>
@@ -125,12 +126,12 @@ const SkillBar = ({ skill, delay }) => {
   return (
     <div className="space-y-2">
       <div className="flex justify-between items-center">
-        <span className="font-medium text-dark">{skill.name}</span>
-        <span className="text-sm text-gray-500">{skill.level}%</span>
+        <span className="font-medium text-dark text-sm sm:text-base">{skill.name}</span>
+        <span className="text-xs sm:text-sm text-gray-500">{skill.level}%</span>
       </div>
-      <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+      <div className="h-1.5 sm:h-2 bg-gray-200 rounded-full overflow-hidden">
         <motion.div 
-          className="h-full bg-primary"
+          className="h-full bg-primary rounded-full"
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.level}%` }}
           transition={{ duration: 0.8, delay, ease: "easeOut" }}
